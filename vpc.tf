@@ -4,7 +4,7 @@ resource "aws_vpc" "vpc-eks" {
   enable_dns_hostnames = true
 
   tags = {
-    Name = "comunidadedevops-vpc"
+    Name        = "comunidadedevops-vpc"
     Environment = "Development"
   }
 }
