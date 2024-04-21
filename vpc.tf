@@ -5,5 +5,6 @@ resource "aws_vpc" "vpc-eks" {
 
   tags = {
     Name = "comunidadedevops-vpc"
+    Environment = "Development"
   }
 }
