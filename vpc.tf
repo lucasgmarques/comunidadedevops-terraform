@@ -1,4 +1,4 @@
-resource "aws_vpc" "vpc-eks" {
+resource "aws_vpc" "vpc_eks" {
   cidr_block           = var.cidr_block
   enable_dns_support   = true
   enable_dns_hostnames = true
@@ -6,7 +6,7 @@ resource "aws_vpc" "vpc-eks" {
   tags = merge(
     local.tags,
     {
-      Name = "comunidadedevops-vpc"
+      Name = "${var.project_name}-vpc"
     }
   )
 }
